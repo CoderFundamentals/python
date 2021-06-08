@@ -18,6 +18,6 @@ In case of machine learning this equation is simply reperesented as :
                                     y` is the label or dependent variable we are trying to predict
                                     w0/b is the bias or y-intercept
                                     w1 is the weight or the intercept
-                                    x is the feature or independent variable
+                                    x1 is the feature or independent variable
                 
 ``````````````````````````````````````````````````````````````````````
