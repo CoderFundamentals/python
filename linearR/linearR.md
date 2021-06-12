@@ -20,7 +20,8 @@ w <sub>1</sub> is the weight or the intercept
 x <sub>1</sub> is the feature or independent variable
                 
 Above problem statement is a simple representation of linear regression with one independent variable.However a more realistic/real time model will be dependent on more than one variable,eg:
-y<sup>'</sup> = w <sub>0</sub>+ w<sub>1</sub>x<sub>1</sub>+ w<sub>2</sub>x2+w  <sub>3</sub>x<sub>3</sub>
+y<sup>'</sup> = w<sub>0</sub>+w<sub>1</sub>x<sub>1</sub>+w<sub>2</sub>x2+w<sub>3</sub>x<sub>3</sub>
+
 ### Training And Loss
 - In supervised learning the models use already labeled examples to learn from them to predict dependent variables.This process is known as training
 - The difference between the actual and prediction is called loss.A perfect model would have the loss of 0 as the prediction matches to actual
@@ -48,7 +49,7 @@ y<sup>'</sup> = w <sub>0</sub>+ w<sub>1</sub>x<sub>1</sub>+ w<sub>2</sub>x2+w  <
 -   As per above diagram, ModelPrediction function takes feature(X), initial value of parameters(In the above equation it is the intercept b and weight w which are feed in), and calculates the predictions.
 -   This predictions is compared against the label to compute the loss using one of already discussed loss function (Squared loss or Mean Squared Loss)
 - If there is a need to reduce the loss, then we have a computeParameterUpdate function where parameters are updated and feed into the ModelPrediction function
-- Once we reached an optimal value of y`, the whole iterative process is stopped and model is said to be <bold>Converged</bold>
+- Once we reached an optimal value of y<sup>'</sup>, the whole iterative process is stopped and model is said to be <Bold>Converged</Bold>
 
 ### Gradient Descent
    In the above diagram, computeParameterUpdate function supplies the weight to the ModelPredict function.This goes on iteratively till we reach a minimum loss. Below diagram depicts the possible value of loss over an iterative values of w~0~
