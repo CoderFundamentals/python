@@ -12,19 +12,15 @@ Thus it is very easy to relate them as number of chirps per minute is associated
     b is the intercept
     x is number of chirps per minute
 ```
-In case of machine learning this equation is simply reperesented as :
-```
-    y <sup>'</sup> = w <sub>0</sub> + w <sub>1</sub>x <sub>1</sub>
-    y` is the label or dependent variable we are trying to predict
-    w <sub>0</sub> /b is the bias or y-intercept
-    w <sub>1</sub> is the weight or the intercept
-    x <sub>1</sub> is the feature or independent variable
+ In case of machine learning this equation is simply reperesented as :
+y <sup>'</sup> = w<sub>0</sub>+w <sub>1</sub>x<sub>1</sub>
+y` is the label or dependent variable we are trying to predict
+w <sub>0</sub> /b is the bias or y-intercept
+w <sub>1</sub> is the weight or the intercept
+x <sub>1</sub> is the feature or independent variable
                 
-```
 Above problem statement is a simple representation of linear regression with one independent variable.However a more realistic/real time model will be dependent on more than one variable,eg:
-```
-                               y <sup>'</sup>  = w  <sub>0</sub> + w  <sub>1</sub> x  <sub>1</sub> + w  <sub>2</sub> x2 + w  <sub>3</sub> x <sub>3</sub>
-```
+y<sup>'</sup> = w <sub>0</sub>+ w<sub>1</sub>x<sub>1</sub>+ w<sub>2</sub>x2+w  <sub>3</sub>x<sub>3</sub>
 ### Training And Loss
 - In supervised learning the models use already labeled examples to learn from them to predict dependent variables.This process is known as training
 - The difference between the actual and prediction is called loss.A perfect model would have the loss of 0 as the prediction matches to actual
