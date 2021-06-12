@@ -43,7 +43,7 @@ y<sup>'</sup> = w<sub>0</sub>+w<sub>1</sub>x<sub>1</sub>+w<sub>2</sub>x<sub>2</s
  It is ideal to understand the direction of our model parameters that we tune to reduce the loss and optimize our model. This is called convergence of our model parameters. So in a linear regression problem if we consider the equation:
 ```             
             y = b + wx
-    Here the predicted value y <sup>'</sup> can be calculated iteratively by supplying different values of b and x till we have minimized the loss.This iterative process can be presented as below.
+    Here the predicted label (y`) can be calculated iteratively by supplying different values of b and x till we have minimized the loss.This iterative process can be presented as below.
 ```
 ![Iterative Approach](https://raw.githubusercontent.com/CoderFundamentals/python/master/linearR/img/GradientDescentDiagram.svg)
 
