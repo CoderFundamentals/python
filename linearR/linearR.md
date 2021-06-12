@@ -14,16 +14,16 @@ Thus it is very easy to relate them as number of chirps per minute is associated
 ```
 In case of machine learning this equation is simply reperesented as :
 ```
-    y` = w~0~ + w1x1
+    y <sup>'</sup> = w <sub>0</sub> + w <sub>1</sub>x <sub>1</sub>
     y` is the label or dependent variable we are trying to predict
-    w~0~ /b is the bias or y-intercept
-    w1 is the weight or the intercept
-    x1 is the feature or independent variable
+    w <sub>0</sub> /b is the bias or y-intercept
+    w <sub>1</sub> is the weight or the intercept
+    x <sub>1</sub> is the feature or independent variable
                 
 ```
 Above problem statement is a simple representation of linear regression with one independent variable.However a more realistic/real time model will be dependent on more than one variable,eg:
 ```
-                               y`  = w~2~ + w1x1 + w2x2 + w3x3
+                               y <sup>'</sup>  = w  <sub>0</sub> + w  <sub>1</sub> x  <sub>1</sub> + w  <sub>2</sub> x2 + w  <sub>3</sub> x <sub>3</sub>
 ```
 ### Training And Loss
 - In supervised learning the models use already labeled examples to learn from them to predict dependent variables.This process is known as training
@@ -35,7 +35,7 @@ Above problem statement is a simple representation of linear regression with one
      To calculate the loss, there are several preferred approaches:
      - Squared Loss:
         -  This is the square of the loss predicted.
-        - loss = (actual value - predicted value)<sup>2</sup>
+        - loss = (actual value - predicted value) <sup>2</sup>
         
     - Mean Squared Error:
         - It is the average squared loss of a prediction.
@@ -44,8 +44,8 @@ Above problem statement is a simple representation of linear regression with one
 ### Reducing Loss Function
  It is ideal to understand the direction of our model parameters that we tune to reduce the loss and optimize our model. This is called convergence of our model parameters. So in a linear regression problem if we consider the equation:
 ```             
-                                            y = b + wx
-    Here the predicted value y` can be calculated iteratively by supplying different values of b and x y till we have minimized the loss.This iterative process can be presented as below.
+            y = b + wx
+    Here the predicted value y <sup>'</sup> can be calculated iteratively by supplying different values of b and x till we have minimized the loss.This iterative process can be presented as below.
 ```
 ![Iterative Approach](https://raw.githubusercontent.com/CoderFundamentals/python/master/linearR/img/GradientDescentDiagram.svg)
 
