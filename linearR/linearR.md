@@ -40,3 +40,17 @@ Above problem statement is a simple representation of linear regression with one
     - Mean Squared Error:
         - It is the average squared loss of a prediction.
         - It is calculated by taking the mean of squaring the loss.
+        
+### Reducing Loss Function
+ It is ideal to understand the direction of our model parameters that we tune to reduce the loss and optimize our model. This is called convergence of our model parameters. So in a linear regression problem if we consider the equation:
+```             
+                                            y = b + wx
+    Here the predicted value y` can be calculated iteratively by supplying different values of b and x y till we have minimized the loss.This iterative process can be presented as below.
+```
+![Iterative Approach](https://raw.githubusercontent.com/CoderFundamentals/python/master/linearR/img/GradientDescentDiagram.svg)
+
+-   As per above diagram, ModelPrediction function takes feature(X), initial value of parameters(In the above equation it is the intercept b and weight w which are feed in), and calculates the predictions.
+-   This predictions is compared against the label to compute the loss using one of already discussed loss function (Squared loss or Mean Squared Loss)
+- If there is a need to reduce the loss, then we have a computeParameterUpdate function where parameters are updated and feed into the ModelPrediction function
+- Once we reached an optimal value of y`, the whole iterative process is stopped and model is said to be <bold>Converged</bold>
+
