@@ -14,16 +14,16 @@ Thus it is very easy to relate them as number of chirps per minute is associated
 ```
 In case of machine learning this equation is simply reperesented as :
 ```
-    y` = w<sub>2</sub> + w1x1
+    y` = w~0~ + w1x1
     y` is the label or dependent variable we are trying to predict
-    w<sub>2</sub>/b is the bias or y-intercept
+    w~0~ /b is the bias or y-intercept
     w1 is the weight or the intercept
     x1 is the feature or independent variable
                 
 ```
 Above problem statement is a simple representation of linear regression with one independent variable.However a more realistic/real time model will be dependent on more than one variable,eg:
 ```
-                               y`  = w<sub>2</sub> + w1x1 + w2x2 + w3x3
+                               y`  = w~2~ + w1x1 + w2x2 + w3x3
 ```
 ### Training And Loss
 - In supervised learning the models use already labeled examples to learn from them to predict dependent variables.This process is known as training
@@ -55,7 +55,7 @@ Above problem statement is a simple representation of linear regression with one
 - Once we reached an optimal value of y`, the whole iterative process is stopped and model is said to be <bold>Converged</bold>
 
 ### Gradient Descent
-   In the above diagram, computeParameterUpdate function supplies the weight to the ModelPredict function.This goes on iteratively till we reach a minimum loss. Below diagram depicts the possible value of loss over an iterative values of w<sub>0</sub>
+   In the above diagram, computeParameterUpdate function supplies the weight to the ModelPredict function.This goes on iteratively till we reach a minimum loss. Below diagram depicts the possible value of loss over an iterative values of w~0~
    ![Convex Plott](https://raw.githubusercontent.com/CoderFundamentals/python/master/linearR/img/convex.svg)
    As we can see, the convex plot always has a lowest point, and this is where loss function can be computed.However doing it iteratively over a large dataset is in efficient. Thus a much preferred approach known as 'Gradient Descent' is used. 
    In Gradient Descent algorithm, we take a random value of weight(mostly 0) and then we descent along the convex plot or loss curve by calculating the gradient of the curve which is the slope(derivative) of the curve itself. This Gradient is a vector which has a magnitude as well as a direction.
