@@ -5,7 +5,7 @@
 - So when we think of numbers, then it can be represented with a magnitude and direction and can be considered as points in space
  
   ![Vector](https://raw.githubusercontent.com/CoderFundamentals/python/master/Support-Vector-Matrix/img/Vector.png)
--Vectors also support basic operations such as addition, scalar multiplication. Also the general question of how long a vector is , is represented as Magnitude of the vector. The magnitude is calculated by using the Pythagoras formulae of distance.
+- Vectors also support basic operations such as addition, scalar multiplication. Also the general question of how long a vector is , is represented as Magnitude of the vector. The magnitude is calculated by using the Pythagoras formulae of distance.
 ![Vector](https://raw.githubusercontent.com/CoderFundamentals/python/master/Support-Vector-Matrix/img/Vector-Magnitude.png)
 
 #### Dot Product
