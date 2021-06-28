@@ -5,7 +5,8 @@
 - So when we think of numbers, then it can be represented with a magnitude and direction and can be considered as points in space
  
   ![Vector](https://raw.githubusercontent.com/CoderFundamentals/python/master/Support-Vector-Matrix/img/Vector.png)
-- Vectors also support basic operations such as addition, scalar multiplication. Also the general question of how long a vector is , is represented as Magnitude of the vector. The magnitude is calculated by using the Pythagoras formulae of distance.
+-Vectors also support basic operations such as addition, scalar multiplication. A
+lso the general question of how long a vector is, is represented as Magnitude of the vector. The magnitude is calculated by using the Pythagoras formulae of distance.
 ![Vector](https://raw.githubusercontent.com/CoderFundamentals/python/master/Support-Vector-Matrix/img/Vector-Magnitude.png)
 
 #### Dot Product
@@ -31,7 +32,9 @@
 #### Tuning Parameters:
 1. C:
     - C value decides how the decision boundary must be plotted to classify the data. Given a large value of C, the algorithm tries to fit the data into two classifications with maximum accuracy. However this also results in overfitting of data and may not be always required.
+    ![SVM](https://raw.githubusercontent.com/CoderFundamentals/python/master/Support-Vector-Matrix/img/SVM-Reg.png)
 2. Gamma:
     - It defines how far each single training example influences the SVM. 
     - If Gamma value is higher, then the decision boundary is mostly reliant upon the points that are closer than that are far from it.
     - If Gamma is low, then the decision boundary also takes far off points into consideration as well.
+     ![SVM](https://raw.githubusercontent.com/CoderFundamentals/python/master/Support-Vector-Matrix/img/SVM-Gamma.png)
